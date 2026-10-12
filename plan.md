@@ -49,7 +49,7 @@ Main risks: Open-Meteo free-tier use is non-commercial only; browser geolocation
 - [x] Test and fix local implementation checkpoints; see evidence below (full project acceptance testing remains pending)
 - [x] Commit the project checkpoints and `commit-log.txt`; the log lists prior commits through its preceding checkpoint
 - [x] Push branch `main` to the connected GitHub repository and verify the remote commit ID
-- [ ] Developer to enable GitHub Pages, confirm a successful workflow, and test the public HTTPS app
+- [x] GitHub Pages workflow completed successfully and the public HTTPS app loaded live forecast data; phone-specific deployed testing remains pending
 
 ### Verify and revise
 
@@ -91,7 +91,8 @@ Main risks: Open-Meteo free-tier use is non-commercial only; browser geolocation
 - Peer feedback included a request for a light extra layer when daytime highs mask chilly mornings/evenings. The app's 60°F-high/55°F-low heuristic was already implemented; a live forecast with a 66°F high and 45°F low displayed its reminder. These cutoffs are project choices, not thresholds endorsed by testers or official guidance.
 - Responsive check at 360px: no horizontal overflow; 44px search button, 46px location button, and native date control. At 1366px: no horizontal overflow and a two-column character/details composition.
 - VS Code diagnostics found no JavaScript errors. `node --test weather.test.js` could not run because Node.js is not installed; the test file is retained, and the relevant logic was exercised in the browser against synthetic forecast data.
-- Not yet verified: denied/unsupported/timeout geolocation, network failures in the rendered interface, automated accessibility audit, a real phone, saved-date variation stability through a full reload-and-reselect sequence, structured task-performance outcomes, or deployed HTTPS behavior.
+- GitHub Pages run 3 succeeded for commit `a9fbdd13093c41eb0f1053f4deaabb977f71499c`. Opened `https://jacklepien.github.io/AI-Explorations---Project-3/`; the deployed page loaded Norfolk's live current observation and seven-day forecast. This was a desktop-browser smoke test, not a real-phone test.
+- Not yet verified: denied/unsupported/timeout geolocation, network failures in the rendered interface, automated accessibility audit, a real phone, saved-date variation stability through a full reload-and-reselect sequence, and structured task-performance outcomes.
 
 ## Revisions
 
