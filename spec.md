@@ -91,7 +91,7 @@ Official NWS alert integration, health diagnosis or individualized medical advic
 - 2026-10-12: Added comfortable, mildly hot, and mildly cold SVG outfit categories at the Developer's direction; retained hot/cold and rain-overlay looks. Added hourly low-rain travel window as the research-justified extra feature.
 - 2026-10-12: Use deterministic independent pseudorandom variation seeds so a previously selected date stays visually consistent without storing a location/date history; only the most recent location is saved.
 - 2026-10-12: A live provider lookup showed ZIP-like numeric searches can return an unrelated place, so the supported manual search is limited to US place names. Added a separate 3-variant snow outerwear layer and snow/traction reminder based on the forecast weather code.
-- 2026-10-12: Added four digital SVG wireframes at the Developer's direction as a substitute for hand drawings; this is a documented deviation from the brief, not a claim that hand-drawn screens are complete. Added a cool-hour light-layer reminder as a simulated-feedback hypothesis; real-peer validation is pending.
+- 2026-10-12: Added four digital SVG wireframes at the Developer's direction as a substitute for hand drawings; this is a documented deviation from the brief, not a claim that hand-drawn screens are complete. Added a cool-hour light-layer reminder after peer feedback asked for guidance on warm days with chilly mornings/evenings. The 60°F high and 55°F low cutoffs remain project heuristics, not official thresholds.
 
 ## Approval
 
