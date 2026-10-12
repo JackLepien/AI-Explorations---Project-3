@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">Digital wireframe: Forecast Fits About screen, laptop</title>
+  <desc id="desc">Landscape About screen with a large introduction column and readable sections for creator, weather source, recommendation method, privacy, and artwork credits.</desc>
+  <defs>
+    <style>
+      .ink{fill:#29363a;font:600 19px Arial,sans-serif}.small{fill:#6b7773;font:15px Arial,sans-serif}.label{fill:#65716c;font:700 12px Arial,sans-serif;letter-spacing:2px}.serif{fill:#29363a;font:700 46px Georgia,serif}.line{stroke:#e4dfd4;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1280" height="820" fill="#f5f0e6"/>
+  <text x="58" y="57" class="ink">ff  forecast fits</text><text x="1010" y="57" class="small">ABOUT THIS PROJECT</text><path d="M52 79H1228" class="line"/>
+  <text x="60" y="140" class="small">← Back to the forecast</text>
+  <text x="60" y="208" class="label">THE STORY BEHIND THE FIT</text>
+  <text x="60" y="273" class="serif">Weather advice,</text><text x="60" y="328" class="serif" fill="#d96f52">with a little style.</text>
+  <text x="60" y="387" class="small">A quick campus outfit idea and a few</text><text x="60" y="414" class="small">practical reminders, informed by the</text><text x="60" y="441" class="small">forecast. This is a planning aid.</text>
+  <rect x="60" y="487" width="300" height="118" rx="16" fill="#dfe9e2"/>
+  <text x="84" y="526" class="label">CREATOR</text><text x="84" y="559" class="ink">Jack Lepien</text><text x="84" y="584" class="small">Claude Code development assistance</text>
+  <text x="487" y="137" class="ink" font-size="23">Weather data</text><text x="487" y="168" class="small">Open-Meteo Forecast + Geocoding APIs · link and CC BY 4.0 attribution</text>
+  <text x="487" y="197" class="small">Free tier is non-commercial; commercial promotion requires another plan.</text><path d="M487 222H1213" class="line"/>
+  <text x="487" y="267" class="ink" font-size="23">How recommendations work</text><text x="487" y="299" class="small">Daily high chooses one of five clothing layers. Rain and snow gear modify it;</text><text x="487" y="323" class="small">UV, hydration, cold, and storm reminders come from coded weather rules.</text>
+  <text x="487" y="354" class="small">Thresholds are project heuristics, not medical or official clothing advice.</text><path d="M487 379H1213" class="line"/>
+  <text x="487" y="424" class="ink" font-size="23">Sources</text><text x="487" y="456" class="small">Open-Meteo · CDC heat guidance · WHO UV Index · National Weather Service</text><text x="487" y="481" class="small">The hourly tip is a forecast-based rain window, not a safety guarantee.</text><path d="M487 507H1213" class="line"/>
+  <text x="487" y="552" class="ink" font-size="23">Your privacy</text><text x="487" y="584" class="small">No account, tracking, or location history. Only the latest place is kept on-device.</text><text x="487" y="609" class="small">Device location is only requested when selected; coordinates go to Open-Meteo.</text><path d="M487 636H1213" class="line"/>
+  <text x="487" y="681" class="ink" font-size="23">Artwork and credits</text><text x="487" y="713" class="small">Original SVG character and clothing illustrations by Jack Lepien.</text><text x="487" y="738" class="small">Development assistance: Claude Code. No third-party artwork in the app.</text>
+</svg>

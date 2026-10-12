@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">Digital wireframe: Forecast Fits main screen, laptop</title>
+  <desc id="desc">Landscape layout with search and date controls above a large character illustration on the left and forecast, reminders, and travel window on the right.</desc>
+  <defs>
+    <style>
+      .ink{fill:#29363a;font:600 18px Arial,sans-serif}.small{fill:#6b7773;font:14px Arial,sans-serif}.label{fill:#65716c;font:700 12px Arial,sans-serif;letter-spacing:2px}.serif{fill:#29363a;font:700 44px Georgia,serif}.card{fill:#fffdf7;stroke:#ded8cd;stroke-width:2}.line{stroke:#e4dfd4;stroke-width:2}.sketch{fill:none;stroke:#82978e;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="1280" height="820" fill="#f5f0e6"/>
+  <text x="58" y="57" class="ink">ff  forecast fits</text><text x="1010" y="57" class="small">ABOUT THIS PROJECT</text>
+  <path d="M52 79H1228" class="line"/>
+  <rect x="54" y="103" width="392" height="54" rx="12" class="card"/><text x="76" y="137" class="small">Search a US city or state</text>
+  <rect x="462" y="103" width="190" height="54" rx="12" fill="#fffdf7" stroke="#ded8cd" stroke-width="2"/><text x="485" y="137" class="small">◎  Use my location</text>
+  <rect x="938" y="103" width="230" height="54" rx="12" class="card"/><text x="965" y="137" class="small">Plan for   Today ▼</text>
+  <text x="60" y="203" class="label">YOUR DAY, DRESSED</text>
+  <text x="60" y="258" class="serif">Forecast</text><text x="60" y="306" class="serif" fill="#d96f52">fits.</text>
+  <rect x="54" y="332" width="510" height="380" rx="24" fill="#dfe9e2" stroke="#ccd9d2" stroke-width="2"/>
+  <circle cx="308" cy="503" r="146" fill="none" stroke="#a8bdb4" stroke-width="2"/>
+  <circle cx="308" cy="503" r="171" fill="none" stroke="#a8bdb4" stroke-width="2" stroke-dasharray="4 9"/>
+  <circle cx="308" cy="430" r="48" fill="#e5b58d"/><path d="M262 428q0-52 46-52t46 52q-18-18-44-18t-48 18" fill="#4f413c"/>
+  <path d="M270 490q38-19 76 0l24 119-100 0Z" fill="#d66b4d" stroke="#a95843" stroke-width="3"/>
+  <path d="M282 609v59m52-59v59" class="sketch"/><path d="M276 668h23m31 0h23" stroke="#fffdf7" stroke-width="11" stroke-linecap="round"/>
+  <rect x="77" y="661" width="202" height="35" rx="9" fill="#fffdf7"/><text x="94" y="684" class="small">●  Original outfit layers</text>
+  <rect x="604" y="194" width="622" height="296" rx="20" class="card"/>
+  <text x="635" y="230" class="label">THE DAILY LOOK</text><text x="635" y="272" class="ink" font-size="25">Comfortable-weather outfit</text>
+  <text x="635" y="310" class="small">One shared recommendation drives the outfit, icon, copy, and reminders.</text>
+  <path d="M635 332H1193" class="line"/>
+  <text x="635" y="364" class="small">FORECAST HIGH</text><text x="635" y="427" fill="#b9503a" font-family="Georgia" font-size="57">73°</text>
+  <text x="790" y="364" class="small">FORECAST LOW</text><text x="790" y="414" class="ink" font-size="31">58°</text>
+  <text x="974" y="385" class="small">CURRENT · 4:20 PM</text><text x="974" y="414" class="ink">70° · feels like 68°</text>
+  <path d="M635 442H1193" class="line"/><text x="635" y="469" class="small">RAIN CHANCE  12%      UV MAX  4      WIND  8 mph</text>
+  <text x="604" y="534" class="label">A FEW GOOD REMINDERS</text><text x="604" y="568" class="ink" font-size="24">Before you head out</text>
+  <rect x="604" y="585" width="622" height="49" rx="10" class="card"/><text x="624" y="616" class="small">☼  UV is 4. Bring sunscreen and look for shade.</text>
+  <rect x="604" y="645" width="622" height="59" rx="12" fill="#e8f0ef" stroke="#d5e0e1" stroke-width="2"/><text x="624" y="670" class="label">CAMPUS DASH TIP</text><text x="624" y="693" class="small">Driest two-hour stretch: 10 AM–12 PM · forecast 10%</text>
+  <rect x="54" y="744" width="1172" height="54" rx="12" fill="#fffdf7" stroke="#ded8cd" stroke-width="2"/>
+  <text x="77" y="777" class="ink" font-size="15">THE WEEK AHEAD</text>
+  <text x="297" y="777" class="small">Today 73°</text><text x="433" y="777" class="small">Tue 79°</text><text x="553" y="777" class="small">Wed 65°</text><text x="685" y="777" class="small">Thu 80°</text><text x="814" y="777" class="small">Fri 72°</text><text x="940" y="777" class="small">Sat 59°</text><text x="1060" y="777" class="small">Sun 61°</text>
+</svg>

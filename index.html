@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4efe5">
+  <meta name="description" content="A weather-aware campus outfit planner with a cheerful original SVG character.">
+  <title>Forecast Fits — weather, worn well</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="weather.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-frame">
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="Forecast Fits home">
+        <span class="wordmark-mark" aria-hidden="true">ff</span>
+        <span>forecast<span class="wordmark-light">fits</span></span>
+      </a>
+      <div class="header-actions">
+        <p class="header-note">A little weather, a lot less guesswork.</p>
+        <button class="text-button" id="about-button" type="button">About this project <span aria-hidden="true">↗</span></button>
+      </div>
+    </header>
+
+    <main id="main-screen">
+      <section class="controls-bar" aria-label="Weather location and date">
+        <form id="location-form" class="location-search">
+          <label class="sr-only" for="location-input">Search a US city or state</label>
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="location-input" name="location" type="search" autocomplete="off" placeholder="City or state" aria-describedby="location-help">
+          <button class="button button-dark" type="submit">Find place</button>
+        </form>
+        <button class="button button-outline location-button" id="geolocate-button" type="button">
+          <span aria-hidden="true">◎</span> Use my location
+        </button>
+        <span id="location-help" class="sr-only">Search results are limited to place names in the United States; ZIP code search is not supported.</span>
+        <label class="date-control" for="date-input">
+          <span class="control-label">Plan for</span>
+          <input id="date-input" type="date" disabled>
+        </label>
+        <button class="icon-button" id="refresh-button" type="button" aria-label="Refresh weather" title="Refresh weather" disabled>↻</button>
+        <div id="search-results" class="search-results" role="listbox" aria-label="US location search results" hidden></div>
+      </section>
+
+      <p id="status-message" class="status-message" role="status" aria-live="polite">Getting the latest forecast for Norfolk, Virginia…</p>
+      <div id="error-message" class="error-message" role="alert" hidden></div>
+
+      <section id="weather-content" class="dashboard-grid" aria-label="Weather outfit recommendation" hidden>
+        <section class="lookbook-column">
+          <div class="section-kicker"><span class="kicker-dot"></span> YOUR DAY, DRESSED</div>
+          <div class="lookbook-heading">
+            <h1>Forecast<br><span>fits.</span></h1>
+            <p id="selected-date-label" class="selected-date-label"></p>
+          </div>
+          <article class="character-card" aria-labelledby="character-caption">
+            <div class="card-ornament ornament-one" aria-hidden="true"></div>
+            <div class="card-ornament ornament-two" aria-hidden="true"></div>
+            <div id="weather-icon" class="weather-badge" aria-hidden="true"></div>
+            <div id="character-art" class="character-art"></div>
+            <div class="character-caption" id="character-caption">
+              <span class="caption-dot"></span>
+              <span id="outfit-name">Picking your fit…</span>
+            </div>
+            <span class="character-sparkle sparkle-one" aria-hidden="true">✳</span>
+            <span class="character-sparkle sparkle-two" aria-hidden="true">✳</span>
+          </article>
+          <p class="character-note">Little forecast. Big outfit energy.</p>
+        </section>
+
+        <section class="recommendation-column" aria-label="Selected day weather details">
+          <article class="recommendation-card">
+            <div class="recommendation-topline">
+              <div>
+                <p class="section-kicker">THE DAILY LOOK</p>
+                <h2 id="recommendation-title">Loading the forecast</h2>
+              </div>
+              <span id="weather-description" class="weather-description"></span>
+            </div>
+            <p id="recommendation-copy" class="recommendation-copy"></p>
+            <div class="temperature-pair">
+              <div class="temperature-main">
+                <span class="temperature-label" id="temperature-label">Forecast high</span>
+                <strong id="high-temperature">--°</strong>
+              </div>
+              <div class="temperature-low">
+                <span class="temperature-label">Forecast low</span>
+                <strong id="low-temperature">--°</strong>
+              </div>
+              <div class="current-reading" id="current-reading" hidden></div>
+            </div>
+            <div class="weather-facts">
+              <div class="weather-fact">
+                <span class="fact-icon rain-fact" aria-hidden="true">◒</span>
+                <span class="fact-label">Rain chance</span>
+                <strong id="rain-probability">—</strong>
+              </div>
+              <div class="weather-fact">
+                <span class="fact-icon sun-fact" aria-hidden="true">☼</span>
+                <span class="fact-label">UV max</span>
+                <strong id="uv-index">—</strong>
+              </div>
+              <div class="weather-fact">
+                <span class="fact-icon wind-fact" aria-hidden="true">≈</span>
+                <span class="fact-label">Wind now</span>
+                <strong id="wind-speed">—</strong>
+              </div>
+            </div>
+          </article>
+
+          <section class="reminders-section" aria-labelledby="reminders-heading">
+            <div class="section-heading-row">
+              <div>
+                <p class="section-kicker">A FEW GOOD REMINDERS</p>
+                <h2 id="reminders-heading">Before you head out</h2>
+              </div>
+              <span class="reminder-spark" aria-hidden="true">✳</span>
+            </div>
+            <ul id="reminder-list" class="reminder-list"></ul>
+          </section>
+
+          <section class="travel-card" aria-labelledby="travel-heading">
+            <div class="travel-icon" aria-hidden="true">↗</div>
+            <div class="travel-copy">
+              <p class="section-kicker">CAMPUS DASH TIP</p>
+              <h2 id="travel-heading">A drier two-hour window</h2>
+              <p id="travel-window-copy">Finding the calmest forecast stretch…</p>
+            </div>
+            <div class="travel-probability" id="travel-probability" aria-label="Average precipitation chance"></div>
+          </section>
+
+          <p class="weather-disclaimer">Forecasts change. This outfit guide is a planning aid, not an official weather alert or safety guarantee.</p>
+        </section>
+      </section>
+
+      <section class="forecast-strip" id="forecast-strip" aria-label="Choose a forecast day" hidden>
+        <div class="forecast-strip-header">
+          <div>
+            <p class="section-kicker">THE WEEK AHEAD</p>
+            <h2>Pick your forecast</h2>
+          </div>
+          <p>All temperatures in °F</p>
+        </div>
+        <div id="forecast-days" class="forecast-days"></div>
+      </section>
+    </main>
+
+    <main id="about-screen" class="about-screen" hidden>
+      <button id="back-button" class="back-button" type="button"><span aria-hidden="true">←</span> Back to the forecast</button>
+      <div class="about-layout">
+        <div class="about-intro">
+          <p class="section-kicker">THE STORY BEHIND THE FIT</p>
+          <h1>Weather advice,<br><span>with a little style.</span></h1>
+          <p>Forecast Fits turns the day's forecast into a quick campus outfit idea and a few practical reminders.</p>
+        </div>
+        <div class="about-details">
+          <section class="about-block">
+            <h2>Made by</h2>
+            <p><strong>Jack Lepien</strong>, with development assistance from Claude Code.</p>
+          </section>
+          <section class="about-block">
+            <h2>Weather data</h2>
+            <p><a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Weather data by Open-Meteo.com</a>, using its live Forecast and Geocoding APIs. Weather values are shown in US customary units.</p>
+            <p>This is an educational prototype. Open-Meteo's free API terms allow non-commercial use only; a clothing-brand promotion must use a paid plan or a provider whose terms permit commercial use. Forecast accuracy and continuous availability are not guaranteed.</p>
+          </section>
+          <section class="about-block">
+            <h2>How recommendations work</h2>
+            <p>The selected day's forecast high sets the base layer: cold below 45°F, mildly cold 45–59°F, comfortable 60–74°F, mildly hot 75–84°F, and hot at 85°F or above. A forecast low at or below 55°F on a warmer day also triggers a light-layer reminder; this is an app heuristic and needs peer validation. These are project heuristics, not official clothing or medical thresholds. Rain gear appears when precipitation probability is 40% or higher or precipitation is forecast; snow forecasts instead use winter clothing and traction reminders. Sun protection appears at UV 3 or higher, hydration at 85°F or higher, and thunderstorms trigger an indoor/limit-outdoor reminder. These thresholds are conservative app rules informed by general guidance from the <a href="https://www.cdc.gov/heat-health/about/index.html" target="_blank" rel="noreferrer">CDC</a>, <a href="https://www.who.int/news-room/questions-and-answers/item/radiation-the-ultraviolet-(uv)-index" target="_blank" rel="noreferrer">WHO UV Index guidance</a>, and <a href="https://www.weather.gov/safety" target="_blank" rel="noreferrer">National Weather Service safety resources</a>.</p>
+            <p>The hourly travel tip shows the forecast's lowest-probability two-hour rain window. It is not a guarantee of dry or safe conditions.</p>
+          </section>
+          <section class="about-block">
+            <h2>Your privacy</h2>
+            <p>No account, analytics, or tracking is used. The browser stores only the most recently chosen location so it can be reused. Device location is requested only when you press “Use my location.” Coordinates are sent to Open-Meteo to retrieve weather; your browser also connects directly to that service, which may receive ordinary connection data such as your IP address. No location history is kept by this app.</p>
+          </section>
+          <section class="about-block">
+            <h2>Artwork and credits</h2>
+            <p>The character, outfits, weather symbols, and interface illustrations are original SVG artwork developed with Claude Code under Jack Lepien's creative direction. Open-Meteo weather data are provided under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a>; see the <a href="https://open-meteo.com/en/licence" target="_blank" rel="noreferrer">data licence</a> and <a href="https://open-meteo.com/en/terms" target="_blank" rel="noreferrer">terms of use</a>.</p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <span>Made for weather between classes.</span>
+      <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Weather data by Open-Meteo.com</a>
+    </footer>
+  </div>
+</body>
+</html>

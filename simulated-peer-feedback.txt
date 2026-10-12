@@ -1,0 +1,20 @@
+SIMULATED MARKETING AVATAR PERSPECTIVES
+Forecast Fits — hypothetical design exercise
+Created: 2026-10-12
+
+Important: The three voices below are fictional marketing personas generated for concept exploration. They did not use the app and are not real peer participants, interview quotes, usability findings, or evidence that the prototype was tested. Do not report these as peer sessions or check off the required three-peer test. Actual peer testing and a real-user-informed revision remain pending.
+
+Jules — 19, commuter student who checks the weather between classes
+"I like that the little character gets dressed for the weather, because I can tell what the idea is without reading a ton. I usually go from class to class, though, and I might see a warm high but not notice that the morning is chilly. A little note about bringing a light layer would be helpful. I also want to know the rain percent and what time looks driest before I head across campus."
+
+Morgan — 21, student who mostly uses a laptop but sometimes checks on a phone
+"The page looks friendly and I can find the forecast pretty fast. On my phone I would want the day buttons to be easy to tap and not too tiny. I like seeing the outfit first, but I would probably check the high, low, rain chance, and reminders before I leave. It helps that the app says the forecast can change."
+
+Devin — 20, student who walks between buildings and tries to pack light
+"The outfit pictures make the weather advice feel less boring. If it is raining, I want the character to actually show rain gear, and if it is snowing, I would expect a coat and boots, not an umbrella outfit. I like the idea of a drier time to walk, but I would want it to say that it is only a guess from the forecast."
+
+Concept iteration inspired by the hypothetical Jules perspective (not validated user research)
+
+Proposed change: When the selected day's forecast high is at least 60°F but its low is 55°F or colder, add a separately varied “cool morning/evening layer” reminder. This covers the gap between dressing for the daytime high and seeing a substantially cooler forecast low. The reminder should not claim a universal clothing threshold, and must be checked with real peers before claiming a usability improvement.
+
+Validation still needed: Ask three peers to select a forecast with a warm high and cool low, explain what they would pack, and comment on whether the new reminder is useful, understandable, and easy to distinguish from the base outfit suggestion.

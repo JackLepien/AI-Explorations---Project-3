@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Digital wireframe: Forecast Fits main screen, phone</title>
+  <desc id="desc">Portrait phone layout with stacked location/date controls, prominent weather character, compact forecast card, reminder, and travel tip.</desc>
+  <defs>
+    <style>
+      .ink{fill:#29363a;font:600 17px Arial,sans-serif}.small{fill:#6b7773;font:13px Arial,sans-serif}.label{fill:#65716c;font:700 10px Arial,sans-serif;letter-spacing:1.7px}.serif{fill:#29363a;font:700 42px Georgia,serif}.card{fill:#fffdf7;stroke:#ded8cd;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="430" height="1120" fill="#f5f0e6"/>
+  <text x="23" y="46" class="ink">ff forecastfits</text><text x="294" y="45" class="small">ABOUT ↗</text>
+  <path d="M20 65H410" stroke="#dfd9ce" stroke-width="2"/>
+  <rect x="20" y="82" width="390" height="50" rx="11" class="card"/><text x="38" y="113" class="small">Search a US city or state</text><rect x="317" y="88" width="84" height="38" rx="8" fill="#29363a"/><text x="332" y="113" fill="#fff" font-family="Arial" font-size="12" font-weight="700">Find place</text>
+  <rect x="20" y="142" width="182" height="48" rx="10" fill="#fffdf7" stroke="#ded8cd" stroke-width="2"/><text x="36" y="172" class="small">◎ My location</text>
+  <rect x="211" y="142" width="199" height="48" rx="10" fill="#fffdf7" stroke="#ded8cd" stroke-width="2"/><text x="227" y="172" class="small">Plan for  Today ▼</text>
+  <text x="24" y="222" class="label">YOUR DAY, DRESSED</text>
+  <text x="24" y="268" class="serif">Forecast</text><text x="24" y="310" class="serif" fill="#d96f52">fits.</text>
+  <text x="283" y="302" class="small">Today · Norfolk</text>
+  <rect x="20" y="328" width="390" height="354" rx="22" fill="#dfe9e2" stroke="#ccd9d2" stroke-width="2"/>
+  <circle cx="215" cy="494" r="129" fill="none" stroke="#a8bdb4" stroke-width="2"/>
+  <circle cx="215" cy="431" r="42" fill="#e5b58d"/><path d="M175 429q0-47 40-47t40 47q-20-19-42-19t-38 19" fill="#4f413c"/>
+  <path d="M178 485q37-18 74 0l19 103H159Z" fill="#d66b4d" stroke="#a95843" stroke-width="3"/>
+  <path d="M183 585v47m48-47v47" stroke="#82978e" stroke-width="10" stroke-linecap="round"/><path d="M178 637h19m31 0h20" stroke="#fffdf7" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="352" cy="375" r="28" fill="#fffdf7"/><path d="M339 381h27q8-13-7-17-9-14-18-1-14-1-12 12Z" fill="#d9e7e6" stroke="#66838a" stroke-width="2"/>
+  <rect x="35" y="635" width="178" height="32" rx="8" fill="#fffdf7"/><text x="49" y="656" class="small">●  Rain shell + boots</text>
+  <text x="35" y="710" class="small" font-style="italic">Little forecast. Big outfit energy.</text>
+  <rect x="20" y="737" width="390" height="205" rx="18" class="card"/>
+  <text x="39" y="770" class="label">THE DAILY LOOK</text><text x="39" y="801" class="ink" font-size="21">Mildly cold layers</text>
+  <text x="39" y="833" class="small">Forecast high</text><text x="39" y="884" fill="#b9503a" font-family="Georgia" font-size="49">58°</text>
+  <text x="175" y="833" class="small">Forecast low</text><text x="175" y="867" class="ink" font-size="26">44°</text>
+  <text x="284" y="833" class="small">Rain chance</text><text x="284" y="867" class="ink" font-size="22">40%</text>
+  <path d="M39 902H391" stroke="#e4dfd4" stroke-width="2"/><text x="39" y="927" class="small">UV max 2   ·   Wind 9 mph</text>
+  <text x="22" y="980" class="label">A FEW GOOD REMINDERS</text>
+  <rect x="20" y="994" width="390" height="50" rx="10" fill="#fffdf7" stroke="#ded8cd" stroke-width="2"/><text x="36" y="1025" class="small">☂  Take an umbrella for the walk.</text>
+  <rect x="20" y="1055" width="390" height="48" rx="10" fill="#e8f0ef" stroke="#d5e0e1" stroke-width="2"/><text x="36" y="1085" class="small">↗  Driest window today: 10 AM–noon · 10%</text>
+</svg>

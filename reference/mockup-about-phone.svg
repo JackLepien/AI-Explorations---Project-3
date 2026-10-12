@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 1160" role="img" aria-labelledby="title desc">
+  <title id="title">Digital wireframe: Forecast Fits About screen, phone</title>
+  <desc id="desc">Portrait About view with a back control and vertically stacked, readable creator, weather source, recommendation, privacy, and art-credit sections.</desc>
+  <defs>
+    <style>
+      .ink{fill:#29363a;font:600 18px Arial,sans-serif}.small{fill:#6b7773;font:14px Arial,sans-serif}.label{fill:#65716c;font:700 10px Arial,sans-serif;letter-spacing:1.7px}.serif{fill:#29363a;font:700 39px Georgia,serif}.line{stroke:#e4dfd4;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="430" height="1160" fill="#f5f0e6"/>
+  <text x="23" y="45" class="ink">ff forecastfits</text><path d="M20 65H410" class="line"/>
+  <text x="24" y="107" class="small">← Back to the forecast</text>
+  <text x="24" y="155" class="label">THE STORY BEHIND THE FIT</text>
+  <text x="24" y="205" class="serif">Weather advice,</text><text x="24" y="251" class="serif" fill="#d96f52">with a little style.</text>
+  <text x="24" y="291" class="small">A quick campus outfit idea and practical</text><text x="24" y="313" class="small">reminders, informed by the forecast.</text>
+  <path d="M24 343H406" class="line"/>
+  <text x="24" y="380" class="ink" font-size="21">Made by</text><text x="24" y="410" class="small">Jack Lepien · Claude Code development help</text>
+  <path d="M24 438H406" class="line"/>
+  <text x="24" y="477" class="ink" font-size="21">Weather data</text><text x="24" y="509" class="small">Open-Meteo Forecast and Geocoding APIs.</text><text x="24" y="532" class="small">Linked attribution; data under CC BY 4.0.</text>
+  <rect x="24" y="550" width="382" height="75" rx="11" fill="#fff4e9" stroke="#e7d8c3" stroke-width="2"/><text x="41" y="580" class="small">Free tier is for non-commercial use only.</text><text x="41" y="603" class="small">Brand promotion needs commercial terms.</text>
+  <path d="M24 651H406" class="line"/>
+  <text x="24" y="690" class="ink" font-size="21">Recommendation method</text><text x="24" y="722" class="small">Daily high selects the outfit's base layers.</text><text x="24" y="745" class="small">Rain and snow add different outerwear.</text><text x="24" y="768" class="small">UV, hydration, cold, and storm reminders</text><text x="24" y="791" class="small">are rules, not medical or official advice.</text>
+  <text x="24" y="831" class="label">GUIDANCE SOURCES</text><text x="24" y="858" class="small">CDC · WHO UV Index · National Weather Service</text><text x="24" y="881" class="small">The two-hour tip is not a safety guarantee.</text>
+  <path d="M24 905H406" class="line"/>
+  <text x="24" y="944" class="ink" font-size="21">Your privacy</text><text x="24" y="976" class="small">No account or tracking. Only the latest location</text><text x="24" y="999" class="small">is saved on this device. Geolocation is optional</text><text x="24" y="1022" class="small">and coordinates are sent to Open-Meteo.</text>
+  <path d="M24 1048H406" class="line"/>
+  <text x="24" y="1085" class="ink" font-size="21">Artwork and credits</text><text x="24" y="1117" class="small">Original SVGs by Jack Lepien · Claude Code assistance</text>
+</svg>
