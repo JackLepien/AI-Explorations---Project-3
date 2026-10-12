@@ -47,7 +47,7 @@ Main risks: Open-Meteo free-tier use is non-commercial only; browser geolocation
 - [x] Implement About view with creator, methods, linked sources, non-commercial terms caveat, privacy, and art credits
 - [x] Create four digital phone/laptop main/About wireframes at Developer's direction; hand-drawn requirement remains unmet unless evaluator approves substitution
 - [x] Test and fix local implementation checkpoints; see evidence below (full project acceptance testing remains pending)
-- [ ] Commit working checkpoints to the connected GitHub repository and generate/commit `commit-log.txt`
+- [x] Create a local baseline commit and `commit-log.txt`; push is pending GitHub authentication, and the log must be refreshed after additional commits
 - [ ] Push the branch, confirm GitHub Pages deployment succeeds, and test the public HTTPS app
 
 ### Verify and revise
@@ -71,7 +71,7 @@ Main risks: Open-Meteo free-tier use is non-commercial only; browser geolocation
 
 ## Current status and pending Developer inputs
 
-- The workspace is initialized on branch `main` and connected to the Developer-provided empty repository `https://github.com/JackLepien/AI-Explorations---Project-3`. No commits have been pushed yet. A GitHub Pages Actions workflow has been added; public deployment and HTTPS testing remain pending.
+- The workspace is initialized on branch `main` and connected to the Developer-provided empty repository `https://github.com/JackLepien/AI-Explorations---Project-3`. The baseline commit and `commit-log.txt` exist locally. The first push was blocked because Git could not prompt for GitHub credentials; authorize Git in the local credential manager before retrying. The GitHub Pages Actions workflow has been added; public deployment and HTTPS testing remain pending.
 - Eight cited interface reference screenshots and four digital SVG wireframes are now in `reference/`. The PNGs will be distributed inside a ZIP per Developer direction; uncompressed originals remain local. Literal hand-drawn sketches are not supplied; Developer asked for digital mockups instead. Approval remains pending, and evaluator acceptance of this substitution is unknown.
 - Three peer usability sessions have not been conducted. Keep notes based on actual sessions only; then prioritize and implement a supported improvement.
 - This chat is not saved as a transcript. The Developer must explicitly request a transcript export.
